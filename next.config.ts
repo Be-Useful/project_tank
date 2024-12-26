@@ -17,7 +17,8 @@ module.exports = {
     dangerouslyAllowSVG: true
   },
   experimental: {
-    ppr: 'incremental'
+    ppr: 'incremental',
+    after: true,
   },
   devIndicators: {
     appIsrStatus: true,
