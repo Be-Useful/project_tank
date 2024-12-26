@@ -1,7 +1,27 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+      },
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+      }
+    ],
+    dangerouslyAllowSVG: true
+  },
+  experimental: {
+    ppr: 'incremental'
+  },
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivityPosition: 'bottom-right',
+    buildActivity: true,
+  },
 };
-
-export default nextConfig;
