@@ -17,7 +17,7 @@ export const formSchema = z.object({
         }
 
         const contentType = res.headers.get("content-type");
-        if (contentType?.startsWith("image/")) {
+        if (contentType?.startsWith("image/") || contentType?.startsWith("cdn/")) {
           return true;
         }
 
