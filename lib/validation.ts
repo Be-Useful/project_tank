@@ -17,7 +17,10 @@ export const formSchema = z.object({
         }
 
         const contentType = res.headers.get("content-type");
-        if (contentType?.startsWith("image/")) {
+        if (contentType?.startsWith("/image") ||
+        url.endsWith(".jpg") ||
+        url.endsWith(".jpeg") ||
+        url.endsWith(".png")) {
           return true;
         }
 
