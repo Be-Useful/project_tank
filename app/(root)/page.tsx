@@ -22,13 +22,13 @@ export default async function Home({
     <>
       <section className="pink_container">
         <h1 className="heading">
-          Pitch Your Startup, <br />
-          Connect With Entrepreneurs
+        "Showcase Your Projects,<br/>
+         Network with Innovators,<br/>
+         and Attract Opportunities
         </h1>
 
         <p className="sub-heading !max-w-3xl">
-          Submit Ideas, Vote on Pitches, and Get Noticed in Virtual
-          Competitions.
+        Fire Up Your Projects, Aim High, and Dominate Virtual Competitions with Project Tank!
         </p>
 
         <SearchForm query={query} />
