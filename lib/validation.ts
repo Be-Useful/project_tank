@@ -17,14 +17,13 @@ export const formSchema = z.object({
         }
 
         const contentType = res.headers.get("content-type");
-        if (contentType?.startsWith("/image") ||
-        url.endsWith(".jpg") ||
-        url.endsWith(".jpeg") ||
-        url.endsWith(".png")) {
+        if (contentType?.startsWith("image/")) {
           return true;
         }
 
-        return false;
+        // Check for common image file extensions
+        const imageExtensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp"];
+        return imageExtensions.some(ext => url.toLowerCase().includes(ext));
       } catch (error) {
         console.error("Error fetching URL:", error);
         return false;
