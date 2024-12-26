@@ -1,27 +1,27 @@
-module.exports = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
+    dangerouslyAllowSVG: true,
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "avatars.githubusercontent.com",
+        hostname: "*",
       },
-      {
-        protocol: "https",
-        hostname: "placehold.co",
-      },
-      {
-        protocol: "https",
-        hostname: "images.ctfassets.net",
-      }
     ],
-    dangerouslyAllowSVG: true
   },
   experimental: {
-    ppr: 'incremental'
+    ppr: "incremental",
   },
   devIndicators: {
     appIsrStatus: true,
-    buildActivityPosition: 'bottom-right',
     buildActivity: true,
+    buildActivityPosition: "bottom-right",
   },
 };

@@ -1,7 +1,7 @@
 import { auth } from "@/auth";
 import { client } from "@/sanity/lib/client";
 import { AUTHOR_BY_ID_QUERY } from "@/sanity/lib/queries";
-import { redirect, notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import Image from "next/image";
 import UserStartups from "@/components/Userstartups";
 import { Suspense } from "react";

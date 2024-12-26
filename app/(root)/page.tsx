@@ -1,11 +1,6 @@
-import Image from "next/image";
 import SearchForm from "../../components/SearchForm";
-import { title } from "process";
 import StartupCard, {StartupTypeCard} from "@/components/StartupCard"; 
-import {client} from "@/sanity/lib/client";
-import { ST } from "next/dist/shared/lib/utils";
 import { STARTUPS_QUERY } from "@/sanity/lib/queries";
-import { Replace } from "lucide-react";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 import { auth } from "@/auth";
 
@@ -52,7 +47,7 @@ export default async function Home({
         </p>
         <ul className="mt-7 card_grid">
           {posts?.length > 0 ? (
-            posts.map((post:StartupTypeCard, index:number) => (
+            posts.map((post:StartupTypeCard) => (
               <StartupCard key={post?._id} post={post}/>
             ))
           ) : (

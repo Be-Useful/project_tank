@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { FaTwitter, FaInstagram, FaLinkedinIn, FaEnvelope, FaGlobe, FaLink, FaExclamationTriangle, FaHome, FaInfoCircle, FaCog, FaGithub } from 'react-icons/fa';
+import {  FaLinkedinIn,  FaGlobe, FaLink, FaExclamationTriangle, FaHome, FaInfoCircle,  FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Footer = () => {
