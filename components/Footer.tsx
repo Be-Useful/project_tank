@@ -41,8 +41,8 @@ const Footer = () => {
           </h2>
           <ul className="list-none p-0 m-0">
             {[
-              { icon: <FaLinkedinIn />, text: 'LinkedIn', link: 'https://www.linkedin.com/in/tarun-kumar-4bb017215/' },
               { icon: <FaGithub />, text: 'Github', link: 'https://github.com/Be-Useful' },
+              { icon: <FaLinkedinIn />, text: 'LinkedIn', link: 'https://www.linkedin.com/in/tarun-kumar-4bb017215/' },
             ].map((item, index) => (
               <li key={index} className="mb-2 flex items-center">
                 {item.icon}
