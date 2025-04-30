@@ -21,7 +21,7 @@ const Footer = () => {
           <ul className="list-none p-0 m-0">
             {[
               { icon: <FaHome />, text: 'Home', link: '/' },
-              { icon: <FaInfoCircle />, text: 'About Me', link: 'https://meek-manatee-28f187.netlify.app/' },
+              { icon: <FaInfoCircle />, text: 'About Me', link: 'https://mek-manatee-28f187.netlify.app/' },
             ].map((item, index) => (
               <li key={index} className="mb-2 flex items-center">
                 {item.icon}
